@@ -1,0 +1,110 @@
+@import "root.css";
+
+header {
+
+    width: 100%;
+    display: flex;
+    height: var(--headerHeightDesktop);
+    align-items: center;
+    box-shadow: 0 5px 30px -13px #0000003b;
+}
+
+#logo-container {
+    flex: 1;
+    margin: 0 0 0 20px;
+    font-size: 1.1rem;
+}
+
+#logo-container h1 {
+    font-family: 'Playball', cursive;
+}
+
+nav {
+    flex: 6;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-link {
+    font-size: 1.05rem;
+    margin: 0 20px;
+}
+
+.nav-link:hover {
+    color: var(--primaryBlue); 
+    text-decoration-line: underline;
+}
+
+#primary-action-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+#primary-action {
+    cursor: pointer;
+    font-size: 1.1rem;
+    background: var(--primaryBlue);
+    border: 1px solid black;
+    border-radius: 40px;
+    padding: 8px 16px;
+    transition: .1s;
+}
+
+#primary-action:hover {
+    border: 2px solid var(--primaryBlueDark);
+    box-shadow: 2px 5px 30px -15px var(--black);
+}
+
+#hero-section-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background: var(--primaryBlue);
+}
+
+#hero-text-container {
+    flex: 1;
+    padding: 100px 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+#hero-text-container h1 {
+    width: 100%;
+    font-family: "Roboto";
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 0;
+}
+#hero-text-container p {
+    font-size: 22px;
+}
+#hero-text-container div {
+    margin: 20px 0;
+}
+#hero-text-container div button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid white;
+    font-size: 20px;
+    font-weight: bold;
+}
+#explore-button {
+    background-color: white;
+    color: #000;
+    margin: 0 20px 0 0;
+}
+#contact-button {
+    background: transparent;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+}
+#hero-graphic-container {
+    flex: 1;
+    
+}
+
+#hero-graphic-container img {
+    width: 70%;
+}

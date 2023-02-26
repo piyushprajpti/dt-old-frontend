@@ -1,0 +1,27 @@
+
+
+:root{
+    --primaryBlue : #c9e7f2;
+    --primaryBlueDark : #7fc4dd;
+    --black: #000;
+    --primaryGrey: #647588;
+    --headerHeightDesktop: 70px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+h1,h2,h3,h4,h5,h6,p,a,label,ul,li,textarea,div,input,span,section,header,nav,ol,img,strong, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    float: left;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+a{
+    text-decoration: none;
+    color: var(--black);
+}
