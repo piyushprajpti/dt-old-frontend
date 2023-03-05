@@ -93,9 +93,7 @@ nav {
     width: 200px;
     height: 100px;
 }
-.hero-button-wrapper {
 
-}
 .hero-button-wrapper button {
     padding: 10px 20px;
     border-radius: 10px;
@@ -135,31 +133,36 @@ nav {
     margin: 0 50px;
 }
 
-#commitment-label {
-    width: 100%;
-    text-align: center;
-    padding: 50px 50px 10px 50px;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: rgb(66, 66, 66);
-    }
 
 /* Description Cards */
+
 #description-card-container {
     width: 100%;
     display: flex;
-    padding: 50px 50px;
+    padding: 100px 50px;
+    flex-wrap: wrap;
 }
+
+#description-card-header {
+    width: 100%;
+    text-align: center;
+    padding: 0 0 70px 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: rgb(66, 66, 66);
+}
+
 .cards {
     margin:0 20px;
-    padding: 50px 20px;
-    border-radius: 5px;
+    padding: 50px;
+    border-radius: 15px;
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #dddddd;
-
+    background-color:#fff;
+    box-shadow: 0 0 30px -5px #0000002c;
+    
 }
 
 .cards h2 {
@@ -172,4 +175,166 @@ nav {
 
 .cards img {
     width: 70px;
+}
+
+/* products description */
+#product-container {
+    width: 100%;
+    padding: 100px 20px;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#product-header {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0 0 60px 0;
+}
+
+#product-image-container {
+    flex: 1 0 50%;
+}
+
+#product-list-container {
+    flex: 1 0 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#product-list-container p {
+    letter-spacing: 1px;
+    word-spacing: 50px;
+    text-align: center;
+    font-size: 22px;
+    padding: 0 25px;
+    line-height: 45px;
+}
+
+/* product notice */
+#product-notice-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px;
+    row-gap: 20px;
+    background-color: var(--primaryBlue);
+}
+#product-notice-container p {
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+#product-notice-container a {
+    padding: 13px 25px;
+    border: 2px solid black;
+    border-radius: 30px;
+    color: black;
+    font-size: 24px;
+    transition: .2s;
+    background: white;
+}
+#product-notice-container a:hover {
+    color: #fff;
+    background: #000;
+}
+
+/* location container */
+#location-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#location-description-container {
+    width: 100%;
+    flex: 2 0 40%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 10px;
+}
+
+#location-description-container h2 {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0 50px 0;
+    text-decoration: underline;
+    font-size: 30px;
+}
+
+
+
+#location-map-container {
+    flex: 3 0 60%;
+    height: 500px;
+    width: 500px;
+    background-color: #e6e6e6;
+}
+/* footer section */
+#footer-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #000000ea;
+}
+
+#footer-description-container {
+    width: 100%;
+    flex: 2;
+    padding:50px;
+}
+
+#footer-description-container h1 {
+    font-size: 40px;
+    padding: 15px 15px 1px 15px;
+    color: white;
+}
+
+#footer-description-container p {
+    padding: 1px 15px;
+    font-size: 18px;
+    color: white;
+}
+
+#footer-links-container {
+    width: 100%;
+    display: flex;
+    flex: 5;
+    padding: 50px;
+}
+
+.footer-links-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.footer-links-wrapper h3 {
+    font-size: 22px;
+    font-weight: 500;
+    padding: 5px;
+    color: white;
+}
+
+.footer-links-wrapper a {
+    font-weight: 500;
+    color: white;
+}
+
+.footer-links-wrapper p {
+    color: white;
+}
+
+.footer-links-wrapper a:hover {
+    color: #ffffffda;
 }

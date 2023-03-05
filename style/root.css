@@ -12,7 +12,7 @@ body {
     padding: 0;
     
 }
-h1,h2,h3,h4,h5,h6,p,a,label,ul,li,textarea,div,input,span,section,header,nav,ol,img,strong, button {
+h1,h2,h3,h4,h5,h6,p,a,label,ul,li,textarea,div,input,span,section,header,nav,ol,img,strong,button {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
