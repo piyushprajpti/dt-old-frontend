@@ -5,10 +5,11 @@
     position: fixed;
     width: 100%;
     height: 100vh;
-    align-items: center;
-    justify-content: center;
-    background-color: #0000006b;
+    /* align-items: center;
+    justify-content: center; */
+    background-color: #0000004b;
     display: none;
+    
 }
 
 #contact-us-popup {
@@ -18,6 +19,7 @@
     background-color: #ffffff;
     border-radius: 8px;
     padding: 10px 20px;
+    margin: 90px 10px 450px 1130px;
 }
 
 #contact-us-popup button {
@@ -34,7 +36,6 @@
 #contact-us-popup button:hover {
     cursor:pointer;
     background-color: #88c9dfdc;
-
 }
 
 #popup-hide-button {
@@ -81,7 +82,7 @@ nav {
 }
 
 .nav-link:hover {
-    color: var(--primaryBlueDark);
+    color: #2fb8ee;
 
 }
 
@@ -291,7 +292,7 @@ nav {
 
 #product-notice-container a:hover {
     color: #fff;
-    background: #000;
+    background: #000000;
 }
 
 /* location container */
@@ -376,5 +377,5 @@ nav {
 }
 
 .footer-links-wrapper a:hover {
-    color: #ffffffda;
+    color: #66c9ec;
 }
