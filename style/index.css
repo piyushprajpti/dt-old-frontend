@@ -1,14 +1,12 @@
-@import "root.css";
+@import url(root.css);
 
 /* popup container */
 #contact-us-popup-container {
+    display: none;
     position: fixed;
     width: 100%;
     height: 100vh;
-    /* align-items: center;
-    justify-content: center; */
     background-color: #0000004b;
-    display: none;
     
 }
 
@@ -19,10 +17,12 @@
     background-color: #ffffff;
     border-radius: 8px;
     padding: 10px 20px;
-    margin: 90px 10px 450px 1130px;
+    position: fixed;
+    top: 70px;
+    right: 30px;
 }
 
-#contact-us-popup button {
+#contact-us-popup a {
     background-color: #88c9df;
     color: black;
     padding: 6px;
@@ -31,9 +31,15 @@
     border-radius: 7px;
     font-size: 17px;
     font-weight: 700;
+    text-align: center;
 }
 
-#contact-us-popup button:hover {
+#contact-us-popup h3 {
+    color: #40c1ec;
+    font-size: 20px;
+}
+
+#contact-us-popup a:hover {
     cursor:pointer;
     background-color: #88c9dfdc;
 }
@@ -86,6 +92,10 @@ nav {
 
 }
 
+.nav-link:active {
+    color: #d14848;
+}
+
 #primary-action-wrapper {
     flex: 1;
     display: flex;
@@ -100,7 +110,7 @@ nav {
     border: 1px solid black;
     border-radius: 40px;
     padding: 8px 16px;
-    transition: .2s;
+    transition-duration: .5s;
 }
 
 #primary-action:hover {
@@ -144,7 +154,7 @@ nav {
     height: 100px;
 }
 
-.hero-button-wrapper button {
+.hero-button-wrapper a {
     padding: 10px 20px;
     border-radius: 10px;
     border: 2px solid white;
@@ -286,13 +296,13 @@ nav {
     border-radius: 30px;
     color: black;
     font-size: 24px;
-    transition: .2s;
+    transition-duration: .5s;
     background: white;
 }
 
 #product-notice-container a:hover {
-    color: #fff;
-    background: #000000;
+    color: #030303;
+    background: #e7e7e7;
 }
 
 /* location container */
@@ -323,7 +333,7 @@ nav {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    background-color: #000000ea;
+    background-color: #002130;
 }
 
 #footer-description-container {
@@ -365,11 +375,13 @@ nav {
     font-weight: 500;
     padding: 5px;
     color: white;
+   
 }
 
 .footer-links-wrapper a {
     font-weight: 500;
     color: white;
+    
 }
 
 .footer-links-wrapper p {
