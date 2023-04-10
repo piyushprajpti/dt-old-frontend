@@ -92,10 +92,6 @@ nav {
 
 }
 
-.nav-link:active {
-    color: #d14848;
-}
-
 #primary-action-wrapper {
     flex: 1;
     display: flex;

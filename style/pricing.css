@@ -1,1 +1,55 @@
 @import url(root.css);
+@import url(index.css);
+@import url(import.css);
+
+
+#product-description-container{
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    box-shadow: 5px 5px 20px #0000006c;
+    border-radius: 15px;
+}
+
+.product-name {
+    background-color: wheat;
+    padding: 10px;
+    font-size: 22px;
+   margin: 5px;
+   font-family: 'Rubik', sans-serif;
+}
+
+.product-price {
+    background-color: thistle;
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    margin: 5px;
+    padding: 10px;
+}
+
+#suit-3pcs {
+    background-color: #979492;
+}
+
+#pant-shirt {
+    background-color: #d3d9f0;
+
+}
+
+#kurta-pajama {
+    background-color: #c5bab6;
+}
