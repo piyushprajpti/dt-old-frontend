@@ -1,9 +1,9 @@
 @import url(root.css);
-@import url(index.css);
+@import url(home.css);
 @import url(import.css);
 
 
-#product-description-container{
+#product-description-container {
     width: 100%;
     display: flex;
     box-sizing: border-box;
@@ -12,44 +12,45 @@
 }
 
 .product-card {
+    width: 300px;
     flex: 1;
-    margin: 10px;
+    margin: 15px;
     padding: 20px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    box-shadow: 5px 5px 20px #0000006c;
     border-radius: 15px;
 }
 
-.product-name {
-    background-color: wheat;
-    padding: 10px;
-    font-size: 22px;
-   margin: 5px;
-   font-family: 'Rubik', sans-serif;
-}
-
 .product-price {
-    background-color: thistle;
-    font-size: 20px;
+    font-size: 22px;
     font-family: 'Rubik', sans-serif;
     font-style: italic;
     font-weight: 500;
-    margin: 5px;
-    padding: 10px;
+    padding: 20px 0 12px 0;
+}
+
+.product-name {
+    text-decoration: underline;
+    padding: 0 0 20px 0;
+    font-size: 26px;
+    font-family: 'Rubik', sans-serif;
 }
 
 #suit-3pcs {
-    background-color: #979492;
+    background-color: #d9d8d8;
 }
 
 #pant-shirt {
-    background-color: #d3d9f0;
+    background-color: #788ddd;
 
 }
 
 #kurta-pajama {
-    background-color: #c5bab6;
+    background-color: #dbc4bc;
+}
+
+#jodhpuri-suit {
+    background-color: #994f5c;
 }

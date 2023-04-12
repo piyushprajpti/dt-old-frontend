@@ -62,7 +62,10 @@ header {
     display: flex;
     height: var(--headerHeightDesktop);
     align-items: center;
-    box-shadow: 0 5px 30px -13px #0000003b;
+    box-shadow: 0 5px 30px -10px #0000003b;
+    position:sticky;
+    top: 0;
+    background-color: #fff;
 }
 
 #logo-container {
