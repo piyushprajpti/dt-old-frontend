@@ -86,7 +86,8 @@ nav {
 }
 
 .nav-link {
-    font-size: 1.05rem;
+    font-size: 18px;
+    font-weight: 900;
     margin: 0 20px;
 }
 
