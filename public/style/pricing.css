@@ -9,7 +9,7 @@
 
 #heading {
     font-size: 24px;
-    padding: 50px 60px;
+    padding: 50px 80px;
 }
 
 #product-description-container {
@@ -21,13 +21,19 @@
 
 .product-card {
     flex: 1 0 300px;
-    margin: 15px;
+    margin: 40px 20px;
     padding: 20px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     border-radius: 15px;
+}
+
+.product-card:hover {
+    box-shadow: 0 0 15px #000000;
+    transition: .4s;
+    
 }
 
 .product-price {
