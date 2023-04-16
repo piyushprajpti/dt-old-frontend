@@ -48,6 +48,45 @@
 
 #form-container {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form-heading {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.form-tabs {
+    padding: 5px;
+}
+
+.form-tabs input {
+    background-color: rgb(240, 240, 240);
+    font-size: 25px;
+    padding: 7px 20px;
+    border-radius: 7px;
+    border-style: none;
+}
+
+.form-tabs input:focus {
+    border-color: #7ec3dd;
+    background-color:#fff;
+}
+
+#button {
+    color: #000;
+    background-color: #b5e5f7;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+#button:hover {
+    cursor: pointer;
+    background-color: #a7d2e2;
+    transition-duration: .5s;
 }
 
 #map-container {
