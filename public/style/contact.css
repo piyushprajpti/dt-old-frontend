@@ -60,23 +60,28 @@
 }
 
 .form-tabs {
-    padding: 5px;
+    padding: 6px 10px;
 }
 
 .form-tabs input {
+    width: 100%;
     background-color: rgb(240, 240, 240);
-    font-size: 25px;
-    padding: 7px 20px;
-    border-radius: 7px;
+    font-size: 20px;
+    line-height: 40px;
+    padding: 0 15px;
+    border-radius: 8px;
     border-style: none;
+    outline: none;
 }
 
 .form-tabs input:focus {
-    border-color: #7ec3dd;
+    border: 2px solid #7ec3dd;
     background-color:#fff;
 }
 
 #button {
+    margin: 10px 0;
+    font-size: 24px;
     color: #000;
     background-color: #b5e5f7;
     border: 2px solid black;

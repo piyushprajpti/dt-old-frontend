@@ -1,62 +1,6 @@
 @import url(root.css);
 @import url(import.css);
 
-/* popup container */
-/* #contact-us-popup-container {
-    display: none;
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background-color: #0000004b;
-    
-}
-
-#contact-us-popup {
-    display: flex;
-    flex-direction: column;
-    width: 250px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    padding: 10px 20px;
-    position: fixed;
-    top: 70px;
-    right: 30px;
-}
-
-#contact-us-popup a {
-    background-color: #88c9df;
-    color: black;
-    padding: 6px;
-    margin: 10px 0px;
-    border: 2px solid black;
-    border-radius: 7px;
-    font-size: 17px;
-    font-weight: 700;
-    text-align: center;
-}
-
-#contact-us-popup h3 {
-    color: #40c1ec;
-    font-size: 20px;
-}
-
-#contact-us-popup a:hover {
-    cursor:pointer;
-    background-color: #88c9dfdc;
-}
-
-#popup-hide-button {
-    width: 100%;
-    text-align: right;
-    font-size: 25px;
-    
-}
-
-#popup-hide-button:hover {
-    cursor: pointer;
-    color: #000000bb;
-} */
-
 /* Header */
 header {
     width: 100%;
@@ -88,13 +32,16 @@ nav {
 
 .nav-link {
     font-size: 18px;
-    font-weight: 900;
+    font-weight: 800;
     margin: 0 20px;
+}
+
+.nav-active {
+    color: #2fb8ee;
 }
 
 .nav-link:hover {
     color: #2fb8ee;
-
 }
 
 #primary-action-wrapper {
