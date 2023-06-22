@@ -105,6 +105,10 @@
     align-items: center;
 }
 
+#map-container iframe {
+    width: 100%;
+}
+
 #map-container h2 {
     font-size: 40px;
     padding: 0 0 10px 0;

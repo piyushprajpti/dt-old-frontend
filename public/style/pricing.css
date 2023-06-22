@@ -4,12 +4,18 @@
 
 #heading-container {
     width: 100%;
-    background-color: #e7e7e7;
+    background-color: #f0f0f0;
 }
 
 #heading {
     font-size: 24px;
-    padding: 50px 80px;
+    padding: 50px 130px;
+    word-spacing: 1px;
+}
+
+#heading span {
+    font-size: 45px;
+    color: var(--primaryTextColor);
 }
 
 #product-description-container {
