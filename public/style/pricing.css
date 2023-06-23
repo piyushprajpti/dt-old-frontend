@@ -4,18 +4,13 @@
 
 #heading-container {
     width: 100%;
-    background-color: #f0f0f0;
+    background-color: var(--primaryBlue);
 }
 
 #heading {
     font-size: 24px;
     padding: 50px 130px;
     word-spacing: 1px;
-}
-
-#heading span {
-    font-size: 45px;
-    color: var(--primaryTextColor);
 }
 
 #product-description-container {
@@ -87,4 +82,105 @@
 
 #safari-suit {
     background-color: #619af3;
+}
+
+/* ----------------------------------media querry---------------------------------- */
+
+@media (max-width:768px) {
+
+    #heading-container {
+        width: 100%;
+        background-color: var(--primaryBlue);
+    }
+    
+    #heading {
+        font-size: 18px;
+        padding: 50px;
+        word-spacing: 1px;
+    }
+
+    
+    #product-description-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .product-card {
+        width: 230px;
+        flex: 1 0 100px;
+        margin: 20px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border-radius: 15px;
+    }
+    
+    .product-card:hover {
+        box-shadow: 0 0 15px #000000;
+        transition: .4s;
+        
+    }
+
+    .product-card img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .product-price {
+        font-size: 16px;
+        font-family: 'Rubik', sans-serif;
+        font-style: italic;
+        padding: 10px 0 6px 0;
+        font-weight: normal;
+    }
+    
+    .product-name {
+        padding: 0 0 20px 0;
+        font-size: 18px;
+        font-family: 'Rubik', sans-serif;
+        display: flex;
+        justify-content: center;
+    }
+    
+    #suit {
+        background-color: #d9d8d8;
+    }
+    
+    #pant-shirt {
+        background-color: #b2beed;
+    
+    }
+    
+    #kurta-pajama {
+        background-color: #dbc4bc;
+    }
+    
+    #jodhpuri-suit {
+        background-color: #a15d69;
+    }
+    
+    #wasket {
+        background-color: #ededce;
+    }
+    
+    #tuxedo {
+        background-color: #9d9ea3;
+    }
+    
+    #indo-western {
+        background-color: #d9ccdd;
+    }
+    
+    #safari-suit {
+        background-color: #619af3;
+    }
 }
