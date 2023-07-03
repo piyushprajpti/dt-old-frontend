@@ -61,10 +61,10 @@ nav {
     border: 1px solid black;
     border-radius: 40px;
     padding: 8px 16px;
-    transition-duration: .5s;
     word-wrap: normal;
     min-width: 130px;
     text-align: center;
+    transition-duration: .4s;
 }
 
 #primary-action:hover {
@@ -343,6 +343,11 @@ nav {
 .footer-links-wrapper a {
     font-weight: 500;
     color: white;
+
+}
+
+.footer-links-wrapper a:hover {
+    transition: .3s ease-in-out;
 
 }
 

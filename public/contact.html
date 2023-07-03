@@ -1,178 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Deep Tailors</title>
-    <link rel="icon" href="img/logo.png" type="image/icon type">
-    <link rel="stylesheet" href="style/contact.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Deep Tailors</title>
+  <link rel="icon" href="img/logo.png" type="image/icon type" />
+  <link rel="stylesheet" href="style/contact.css" />
 </head>
+
 <body>
-    <header>
+  <header>
+    <div id="logo-container">
+      <h1>Deep Tailors</h1>
+    </div>
 
-        <div id="logo-container">
-            <h1>Deep Tailors</h1>
+    <nav>
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="pricing.html" class="nav-link">Pricing</a>
+      <a href="about.html" class="nav-link">About Us</a>
+    </nav>
+
+    <div id="primary-action-wrapper">
+      <a id="primary-action" href="contact.html">Contact Us</a>
+    </div>
+
+    <div id="nav-link-container">
+      <div id="nav-link-button">
+        ☰
+        <ul id="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li>
+            <a href="contact.html" class="nav-link nav-active">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div id="tag-container">
+    <a class="tags" href="tel:+91 7014986896">
+      <i class="fa fa-phone"></i>
+      <h3 class="tag-heading">Phone</h3>
+      <p class="tag-description">+91 70149 86896</p>
+    </a>
+    <a class="tags" href="mailto:piyushoa2004@gmail.com">
+      <i class="fa fa-envelope"></i>
+      <h3 class="tag-heading">E-mail</h3>
+      <p class="tag-description">piyushoa2004@gmail.com</p>
+    </a>
+    <a class="tags" href="https://goo.gl/maps/wJhzs8YgMBrxgJ8u9" target="_blank">
+      <i class="fa fa-shop"></i>
+      <h3 class="tag-heading">Address</h3>
+      <p class="tag-description">Ashok Complex, Behror</p>
+    </a>
+  </div>
+
+  <div id="form-and-map-container">
+    <section id="form-container">
+      <div id="form-heading">
+        <h2>Get in Touch</h2>
+        <h3>We're here to help you!</h3>
+      </div>
+
+      <div id="form-tabs-container">
+        <div class="form-tabs">
+          <label class="form-tabs-label" for="name">Name</label>
+          <input class="form-tabs-input" type="text" name="text" id="name" placeholder="Your Name" required />
         </div>
 
-        <nav>
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="pricing.html" class="nav-link">Pricing</a>
-            <a href="about.html" class="nav-link">About Us</a>
-        </nav>
-
-        <div id="primary-action-wrapper">
-            <a id="primary-action" href="contact.html">Contact Us</a>
+        <div class="form-tabs">
+          <label class="form-tabs-label" for="email">Email</label>
+          <input class="form-tabs-input" type="email" name="email" id="email" placeholder="you@example.com" required />
         </div>
 
-        <div id="nav-link-container">
-            <div id="nav-link-button">☰
-                <ul id="nav-list">
-                    <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li><a href="pricing.html" class="nav-link">Pricing</a></li>
-                    <li><a href="about.html" class="nav-link">About Us</a></li>
-                    <li><a href="contact.html" class="nav-link nav-active">Contact Us</a></li>
-                </ul>
-            </div>
+        <div class="form-tabs">
+          <label class="form-tabs-label" for="number">Mobile Number</label>
+          <input class="form-tabs-input" type="number" name="number" id="number" placeholder="12345 67890" required>
         </div>
 
-    </header>
+        <div class="form-tabs">
+          <label class="form-tabs-label" for="query">How can we help you?</label>
+          <textarea class="form-tabs-input" name="query" id="query" placeholder="Briefly explain your query"></textarea>
+        </div>
+      </div>
 
-    <div id="tag-container">
-        <a class="tags" href="tel:+91 7014986896">
+      <div class="form-tabs">
+        <button type="button" id="submit-form-button">
+          <span id="send-button">Send</span>
+          <i class="fa-solid fa-spinner fa-spin" style="color: #000000;" id="loading"></i>
+          <i class="fa-solid fa-check" style="color: #000000;" id="check-icon"></i>
+        </button>
+      </div>
+    </section>
+    <section id="location-container">
+      <h2>Locate us</h2>
+      <div id="location-map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3526.3081636004154!2d76.28784902794476!3d27.892515097961507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396d521ef3853c11%3A0xcea04dd40331e56d!2sDeep%20Tailors!5e0!3m2!1sen!2sin!4v1678454530213!5m2!1sen!2sin"
+          style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+  </div>
+
+  <footer id="footer-container">
+    <div id="footer-description-container">
+      <h1>Deep Tailors</h1>
+      <p>
+        ⇨ Visit us for a premium stitching experience and let us create a
+        wardrobe that will make you look good and feel confident.
+      </p>
+    </div>
+    <div id="footer-links-container">
+      <div class="footer-links-wrapper">
+        <h3>Useful Links</h3>
+        <a href="index.html">Home</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html">About Us</a>
+      </div>
+      <div class="footer-links-wrapper">
+        <h3>Connect with Us</h3>
+        <a target="_blank" href="https://www.instagram.com/deeptailors_1987/?igshid=YmMyMTA2M2Y%3D">
+          <i class="fa fa-instagram"></i>Instagram
+        </a>
+        <a target="_blank" href="https://www.facebook.com/tailorsdeep">
+          <i class="fa fa-facebook"></i>Facebook
+        </a>
+        <a target="_blank" href="https://wa.me/7014986896">
+          <i class="fa fa-whatsapp"></i>Whatsapp
+        </a>
+      </div>
+      <div class="footer-links-wrapper">
+        <h3>Contact Us</h3>
+        <a href="tel:+917014986896"> <i class="fa fa-phone"></i>Call Us </a>
+        <a href="mailto:piyushoa2004@gmail.com">
+          <i class="fa fa-envelope"></i>Mail Us
+        </a>
+      </div>
+      <div class="footer-links-wrapper">
+        <h3>Address</h3>
+        <p>
+          Ashok Complex,New Bus Stand,<br />
+          Behror, Rajasthan, 301701
+        </p>
+        <a href="https://goo.gl/maps/wJhzs8YgMBrxgJ8u9" id="map" target="_blank">
+          Get Directions <i class="fa fa-location-dot"></i>
+        </a>
+      </div>
+    </div>
+    <div id="media-footer-links-container">
+      <div class="footer-links-wrapper">
+        <h3>Useful Links</h3>
+        <a href="index.html">Home</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html">About Us</a>
+      </div>
+      <div class="footer-links-wrapper">
+        <h3>Address</h3>
+        <p>
+          Ashok Complex,New Bus Stand,<br />
+          Behror, 301701
+        </p>
+      </div>
+      <div class="footer-links-wrapper">
+        <h3>Social</h3>
+        <div class="footer-icons">
+          <a target="_blank" href="https://www.instagram.com/deeptailors_1987/?igshid=YmMyMTA2M2Y%3D">
+            <i class="fa fa-instagram"></i>
+          </a>
+          <a target="_blank" href="https://www.facebook.com/tailorsdeep">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a target="_blank" href="https://wa.me/7014986896">
+            <i class="fa fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+      <div class="footer-links-wrapper">
+        <h3>Contact</h3>
+        <div class="footer-icons">
+          <a href="tel:+917014986896">
             <i class="fa fa-phone"></i>
-            <h3 class="tag-heading">Phone</h3>
-            <p class="tag-description">+91 70149 86896</p>
-        </a>
-        <a class="tags" href="mailto:piyushoa2004@gmail.com">
+          </a>
+          <a href="mailto:piyushoa2004@gmail.com">
             <i class="fa fa-envelope"></i>
-            <h3 class="tag-heading">E-mail</h3>
-            <p class="tag-description">piyushoa2004@gmail.com</p>
-        </a>
-        <a class="tags" href="https://goo.gl/maps/wJhzs8YgMBrxgJ8u9" target="_blank">
-            <i class="fa fa-shop"></i>
-            <h3 class="tag-heading">Address</h3>
-            <p class="tag-description">Ashok Complex, Behror</p>
-        </a>
-        
+          </a>
+        </div>
+      </div>
     </div>
-
-    <div id="form-and-map-container">
-        <div id="form-container">
-            <div id="form-heading">
-                <h2>We're here to help you!</h2>
-                <h3>Reach out to us using the form below</h3>
-            </div>
-            <div class="form-tabs">
-                <input type="text" name="text" id="text" placeholder="Name" required>
-            </div>
-            <div class="form-tabs">
-                <input type="email" name="email" id="email" placeholder="E-mail">
-            </div>
-            <div class="form-tabs">
-                <input type="number" name="number" id="number" placeholder="Mobile Number" required>
-            </div>
-            <div class="form-tabs">
-                <input type="button" name="Submit" id="button" value="Send">
-            </div>
-        </div>
-        <section id="location-container">
-            <h2>Locate us</h2>
-            <div id="location-map-container">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3526.3081636004154!2d76.28784902794476!3d27.892515097961507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396d521ef3853c11%3A0xcea04dd40331e56d!2sDeep%20Tailors!5e0!3m2!1sen!2sin!4v1678454530213!5m2!1sen!2sin"
-                    style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </section>
+    <div id="copyright-container">
+      <p>Copyright © 2023 Deep Tailors. All rights reserved.</p>
     </div>
+  </footer>
 
-    <footer id="footer-container">
-        <div id="footer-description-container">
-            <h1>Deep Tailors</h1>
-            <p>⇨ Visit us for a premium stitching experience and let us create a wardrobe that will make you look good and feel confident.</p>
-        </div>
-        <div id="footer-links-container">
-            <div class="footer-links-wrapper">
-                <h3>Useful Links</h3>
-                <a href="index.html">Home</a>
-                <a href="pricing.html">Pricing</a>
-                <a href="about.html">About Us</a>
-            </div>
-            <div class="footer-links-wrapper">
-                <h3>Connect with Us</h3>
-                <a target="_blank" href="https://www.instagram.com/deeptailors_1987/?igshid=YmMyMTA2M2Y%3D">
-                    <i class="fa fa-instagram"></i>Instagram
-                </a>
-                <a target="_blank" href="https://www.facebook.com/tailorsdeep">
-                    <i class="fa fa-facebook"></i>Facebook
-                </a>
-                <a target="_blank" href="https://wa.me/7014986896">
-                    <i class="fa fa-whatsapp"></i>Whatsapp
-                </a>
-            </div>
-            <div class="footer-links-wrapper">
-                <h3>Contact Us</h3>
-                <a href="tel:+917014986896">
-                    <i class="fa fa-phone"></i>Call Us
-                </a>
-                <a href="mailto:piyushoa2004@gmail.com">
-                    <i class="fa fa-envelope"></i>Mail Us
-                </a>
-            </div>
-            <div class="footer-links-wrapper">
-                <h3>Address</h3>
-                <p>Ashok Complex,New Bus Stand,<br> Behror, Rajasthan, 301701</p>
-                <a href="https://goo.gl/maps/wJhzs8YgMBrxgJ8u9" id="map" target="_blank">
-                    Get Directions <i class="fa fa-location-dot"></i>
-                </a>
-            </div>
-        </div>
-        <div id="media-footer-links-container">
-            <div class="footer-links-wrapper">
-                <h3>Useful Links</h3>
-                <a href="index.html">Home</a>
-                <a href="pricing.html">Pricing</a>
-                <a href="about.html">About Us</a>
-            </div>
-            <div class="footer-links-wrapper">
-                <h3>Address</h3>
-                <p>Ashok Complex,New Bus Stand,<br> Behror, 301701</p>
-               
-            </div>
-            <div class="footer-links-wrapper">
-                <h3>Social</h3>
-                <div class="footer-icons">
-                    <a target="_blank" href="https://www.instagram.com/deeptailors_1987/?igshid=YmMyMTA2M2Y%3D">
-                        <i class="fa fa-instagram"></i>
-                    </a>
-                    <a target="_blank" href="https://www.facebook.com/tailorsdeep">
-                        <i class="fa fa-facebook"></i>
-                    </a>
-                    <a target="_blank" href="https://wa.me/7014986896">
-                        <i class="fa fa-whatsapp"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="footer-links-wrapper" >
-                <h3>Contact</h3>
-                <div class="footer-icons">
-                    <a href="tel:+917014986896">
-                        <i class="fa fa-phone"></i>
-                    </a>
-                    <a href="mailto:piyushoa2004@gmail.com">
-                        <i class="fa fa-envelope"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div id="copyright-container">
-            <p>Copyright © 2023 Deep Tailors. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script src="js/home.js"></script>
-    <script src="https://kit.fontawesome.com/278cf626ec.js" crossorigin="anonymous"></script>
-
+  <script src="js/common.js"></script>
+  <script src="https://kit.fontawesome.com/278cf626ec.js" crossorigin="anonymous"></script>
+  
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+  integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  
+  <script src="js/contact.js"></script>
 </body>
+
 </html>
