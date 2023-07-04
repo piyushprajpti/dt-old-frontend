@@ -19,6 +19,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    text-align: center;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 8px #0000004f;
@@ -28,7 +29,6 @@
 .tags:hover {
     background-color: #f9f9f9;
     box-shadow: 0 0 12px 3px #0000004f;
-
 }
 
 .tags i {
@@ -147,6 +147,14 @@
     transition-duration: .5s;
 }
 
+#loading {
+    display: none;
+}
+
+#cross {
+    display: none;
+}
+
 #check-icon {
     display: none;
 }
@@ -164,7 +172,6 @@
     width: 100%;
     text-align: center;
     padding: 20px 0;
-    text-decoration: underline;
     font-size: 30px;
 }
 
@@ -172,7 +179,7 @@
     height: auto;
     width: 100%;
     background-color: #e6e6e6;
-    aspect-ratio: 1;
+    aspect-ratio: 3/2;
 }
 
 #location-map-container iframe {
@@ -184,13 +191,8 @@
 
 @media (max-width: 768px) {
     #tag-container {
-        width: 100%;
         padding: 20px;
-        background-color: var(--primaryBlue);
-        display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
     }
     
     .tags {
@@ -198,31 +200,14 @@
         height: 130px;
         margin: 10px;
         padding: 10px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        background-color: #fff;
-        border-radius: 10px;
-        box-shadow: 0 0 10px #0000004f;
-    }
-    
-    .tags:hover {
-        color: #49b8e0;
-        transition-duration: .5s;
     }
     
     .tags i {
-        color:#49b8e0;
-        padding: 5px;
         font-size: 20px;
     }
     
     .tag-heading {
          font-size: 18px;
-         padding: 5px;
     }
     
     .tag-description {
@@ -230,95 +215,65 @@
     }
     
     #form-and-map-container {
-        width: 100%;
-        display: flex;
         flex-direction: column;
-        align-items: center;
     }
     
     #form-container {
-        padding: 20px;
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        padding: 20px 30px;
     }
     
     #form-heading {
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
+        padding: 20px;
     }
+    
+    #form-heading h2,h3 {
+        padding: 0 5px;
+    } 
+    
     #form-heading h2 {
         font-size: 20px;
     }
-
-
+    
     #form-heading h3 {
-        font-size: 16px;
+        font-size: 18px;
+    }
+    
+    #form-tabs-container {
+        padding: 20px;
     }
     
     .form-tabs {
-        padding: 6px 0;
+        padding: 5px;
     }
     
-    .form-tabs input {
-        width: 100%;
-        background-color: rgb(240, 240, 240);
+    .form-tabs label {
+        font-size: 16px;
+    }
+    
+    .form-tabs-input, textarea {
         font-size: 14px;
-        line-height: 40px;
-        padding: 0 15px;
-        border-radius: 8px;
-        border-style: none;
-        outline: none;
+        line-height: 35px;
+        padding: 0 8px;
     }
     
-    .form-tabs input:focus {
-        border: 2px solid #7ec3dd;
-        background-color:#fff;
+    #query {
+        height: 80px; 
+        line-height: 25px;
     }
     
-    #button {
-        margin: 10px 0;
+    #submit-form-button {
         font-size: 18px;
-        color: #000;
-        background-color: #b5e5f7;
-        border: 2px solid black;
-        border-radius: 8px;
-    }
-    
-    #button:hover {
-        cursor: pointer;
-        background-color: #a7d2e2;
-        transition-duration: .5s;
     }
     
     #location-container {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
         padding: 30px;
         row-gap: 20px;
         background-color: #e6e6e6;
     }
 
     #location-container h2 {
-        width: 100%;
-        text-align: center;
         padding: 10px;
-        text-decoration: underline;
         font-size: 20px;
-    }
-
-    #location-map-container {
-        height: 200px;
-        width: 100%;
-        background-color: #e6e6e6;
-    }
-
-    #location-map-container iframe {
-        height: 100%;
-        width: 100%;
     }
     
     
