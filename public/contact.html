@@ -69,31 +69,37 @@
       <div id="form-tabs-container">
         <div class="form-tabs">
           <label class="form-tabs-label" for="name">Name</label>
+          <div id="name-error" class="form-input-error"></div>
           <input class="form-tabs-input" type="text" name="text" id="name" placeholder="Your Name" required />
         </div>
 
         <div class="form-tabs">
           <label class="form-tabs-label" for="email">Email</label>
-          <input class="form-tabs-input" type="email" name="email" id="email" placeholder="you@example.com" required />
+          <div id="email-error" class="form-input-error"></div>
+          <input class="form-tabs-input" type="email" name="email" id="email" placeholder="you@example.com" />
         </div>
 
         <div class="form-tabs">
           <label class="form-tabs-label" for="number">Mobile Number</label>
+          <div id="number-error" class="form-input-error"></div>
           <input class="form-tabs-input" type="number" name="number" id="number" placeholder="12345 12345" required>
         </div>
 
         <div class="form-tabs">
           <label class="form-tabs-label" for="query">How can we help you?</label>
-          <textarea class="form-tabs-input" name="query" id="query" placeholder="Briefly explain your query"></textarea>
+          <div id="query-error" class="form-input-error"></div>
+          <textarea class="form-tabs-input" name="query" id="query" placeholder="Briefly explain your query..."></textarea>
         </div>
+      </div>
+
+      <div id="messege-container">
+        <p id="result-messege"></p>
       </div>
 
       <div class="form-tabs">
         <button type="button" id="submit-form-button">
           <span id="send-button">Send</span>
           <i class="fa-solid fa-spinner fa-spin" style="color: #000000;" id="loading"></i>
-          <i class="fa-solid fa-x" style="color: #000000;" id="cross"></i>
-          <i class="fa-solid fa-check" style="color: #000000;" id="check-icon"></i>
         </button>
       </div>
     </section>

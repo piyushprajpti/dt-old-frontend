@@ -64,12 +64,14 @@ nav {
     word-wrap: normal;
     min-width: 130px;
     text-align: center;
-    transition-duration: .4s;
+    transition-duration: .3s;
 }
 
 #primary-action:hover {
     box-shadow: 2px 5px 40px -15px var(--black);
     background-color: #b3def0;
+    /* outline: 2px solid var(--primaryBlueDark);
+    outline-offset: 3px; */
 }
 
 #nav-link-container {
